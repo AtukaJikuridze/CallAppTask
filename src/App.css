@@ -58,4 +58,27 @@ p {
   font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
+}
+
+label,
+input {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+@media screen and (max-width: 590px) {
+  .data-element .data-basic-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .data-element .data-basic-info .data-info-btn {
+    width: 100%;
+  }
+  .data-element .data-more-info.activeData {
+    height: 300px;
+  }
+  .data-element .data-more-info .info-flex {
+    flex-direction: column;
+    text-align: center;
+  }
 }/*# sourceMappingURL=App.css.map */
