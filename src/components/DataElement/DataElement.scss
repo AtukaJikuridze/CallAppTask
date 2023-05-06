@@ -1,0 +1,43 @@
+.data-element {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .data-id {
+    min-width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 15px;
+  }
+  .data-more-info {
+    height: 45px;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #55c2da;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      color: #fff;
+      background: #4284a8;
+      text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+        0px -4px 10px rgba(255, 255, 255, 0.3);
+    }
+  }
+  .data-phone,
+  .data-name {
+    color: #3b3467;
+  }
+}
