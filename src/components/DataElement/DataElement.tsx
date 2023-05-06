@@ -12,6 +12,7 @@ interface dataTypes {
   street: string;
   gender: string;
   deleteItem: Function;
+  update: Function;
 }
 export default function DataElement({
   id,
@@ -24,6 +25,7 @@ export default function DataElement({
   city,
   gender,
   deleteItem,
+  update,
 }: dataTypes) {
   const moreInformation = () => {
     if (dataActive === id) {
@@ -52,6 +54,7 @@ export default function DataElement({
         gender={gender}
         name={name}
         deleteItem={() => deleteItem(id)}
+        update={() => update()}
       />
     </div>
   );

@@ -9,6 +9,7 @@ interface dataInfoTypes {
   gender: string;
   name: string;
   deleteItem: Function;
+  update: Function;
 }
 
 export default function DataMoreInfo({
@@ -21,6 +22,7 @@ export default function DataMoreInfo({
   gender,
   name,
   deleteItem,
+  update,
 }: dataInfoTypes) {
   return (
     <div className={`data-more-info ${activeData === id ? "activeData" : ""}`}>
@@ -43,7 +45,9 @@ export default function DataMoreInfo({
         <button className="delete" onClick={() => deleteItem(id)}>
           Delete
         </button>
-        <button className="change">Change</button>
+        <button className="update" onClick={() => update()}>
+          Update
+        </button>
       </div>
     </div>
   );

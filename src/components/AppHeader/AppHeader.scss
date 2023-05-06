@@ -5,11 +5,13 @@
   height: 140px;
   padding: 20px 0px;
   position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   h1 {
     text-align: center;
     color: royalblue;
   }
-  button {
+  .create {
     width: 50%;
     margin: 20px auto;
     display: block;

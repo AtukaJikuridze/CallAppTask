@@ -1,7 +1,52 @@
 .create-new {
+  height: 0px;
   position: absolute;
   width: 100%;
-  height: 200px;
+  transition: 0.4s;
+  overflow: hidden;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.create-new.active {
+  height: 250px;
+}
+.create-new h2 {
+  text-align: center;
+}
+.create-new form {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.create-new form label {
+  margin-bottom: 20px;
+  width: 50%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.create-new form label input {
+  height: 25px;
+}
+.create-new .create-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 0px 20px;
+}
+.create-new .create-buttons button {
+  width: 100%;
+  padding: 10px 0px;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.create-new .create-buttons button.cancel {
+  background-color: #d2122e;
+}
+.create-new .create-buttons button.submit {
+  background-color: #3cb371;
 }/*# sourceMappingURL=CreateNew.css.map */
