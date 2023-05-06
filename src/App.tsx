@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
 import DataElement from "./components/DataElement/DataElement";
+import AppHeader from "./components/AppHeader/AppHeader";
 
 export default function App() {
   useEffect(() => {
@@ -9,7 +10,7 @@ export default function App() {
       setData(res.data);
     });
   }, []);
-  const deleteElement = (index: number) => {
+  const deleteItem = (index: number) => {
     axios
       .post("http://localhost:3002/deletePost", {
         deleteId: index,
@@ -19,13 +20,12 @@ export default function App() {
       });
   };
   const [data, setData] = useState<any>(null);
-  const [infoAvtive, setInfoActive] = useState<boolean>(true);
-  const moreInformation = () => {
-    console.log(true);
-  };
+  const [dataActive, setDataActive] = useState<number | null>(null);
+
   return (
     <div className="App">
       <div className="data-main">
+        <AppHeader />
         <div className="data-list">
           {data?.map((e: any, i: number) => (
             <DataElement
@@ -33,7 +33,13 @@ export default function App() {
               id={e.id}
               name={e.name}
               phone={e.phone}
-              moreInformation={() => moreInformation}
+              setDataActive={setDataActive}
+              dataActive={dataActive}
+              email={e.email}
+              city={e.address.city}
+              street={e.address.street}
+              gender={e.gender}
+              deleteItem={() => deleteItem(e.id)}
             />
           ))}
         </div>

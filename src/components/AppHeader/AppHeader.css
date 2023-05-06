@@ -1,0 +1,21 @@
+.app-header {
+  background-color: #fff;
+  width: 700px;
+  max-width: 100%;
+  height: 140px;
+  padding: 20px 0px;
+  position: relative;
+}
+.app-header h1 {
+  text-align: center;
+  color: royalblue;
+}
+.app-header button {
+  width: 50%;
+  margin: 20px auto;
+  display: block;
+  padding: 7px 0px;
+  cursor: pointer;
+  border: royalblue 2px solid;
+  background-color: transparent;
+}/*# sourceMappingURL=AppHeader.css.map */

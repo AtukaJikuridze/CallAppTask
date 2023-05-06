@@ -3,6 +3,8 @@
   padding: 20px;
   margin-bottom: 10px;
   border-radius: 10px;
+}
+.data-element .data-basic-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +20,7 @@
   border-radius: 50%;
   font-size: 15px;
 }
-.data-element .data-more-info {
+.data-element .data-info-btn {
   height: 45px;
   padding: 0px 15px;
   display: flex;
@@ -31,7 +33,7 @@
   transition: 0.3s;
   cursor: pointer;
 }
-.data-element .data-more-info:hover {
+.data-element .data-info-btn:hover {
   color: #fff;
   background: #4284a8;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);

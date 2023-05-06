@@ -3,9 +3,12 @@
   padding: 20px;
   margin-bottom: 10px;
   border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .data-basic-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .data-id {
     min-width: 30px;
     height: 30px;
@@ -17,7 +20,7 @@
     border-radius: 50%;
     font-size: 15px;
   }
-  .data-more-info {
+  .data-info-btn {
     height: 45px;
     padding: 0px 15px;
     display: flex;

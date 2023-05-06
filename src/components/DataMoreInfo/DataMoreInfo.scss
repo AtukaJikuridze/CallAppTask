@@ -1,0 +1,46 @@
+.data-more-info {
+  height: 0px;
+  transition: 0.4s;
+  overflow: hidden;
+  .info-flex {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    .info {
+      h3 {
+        font-weight: 700;
+        text-align: center;
+      }
+      p {
+        color: gray;
+        font-size: 13px;
+      }
+    }
+  }
+  &.activeData {
+    border-top: 1px solid rgba(0, 0, 0, 0.423);
+    margin-top: 20px;
+    padding: 10px 0px;
+    height: 150px;
+  }
+  .info-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 20px;
+    button {
+      width: 100%;
+      padding: 10px 0px;
+      color: #fff;
+      border: 0;
+      border-radius: 10px;
+      cursor: pointer;
+      &.delete {
+        background-color: #d2122e;
+      }
+      &.change {
+        background-color: #3cb371;
+      }
+    }
+  }
+}
